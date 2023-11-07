@@ -1,16 +1,15 @@
 'use strict';
 // # 1
-function numSum(numbers) {
-    let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
-      sum += numbers[i];
+function sum(...numbers) {
+    let numberSum = 0;
+    for (let item of numbers) {
+      numberSum += item;
     }
-    return sum;
+    return numberSum;
   }
   
-  let array = [10, 50, 6, 7, 8, 11, 6, 3, 9];
-  let sum = numSum(array);
-  console.log(sum);
+  let sumResultFnc = sum (10, 50, 6, 7, 8, 11, 6, 3, 9);
+  console.log(sumResultFnc);
 
 // #2
 let user = {
